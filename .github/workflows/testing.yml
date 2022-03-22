@@ -1,0 +1,13 @@
+name: test the runner
+
+on: 
+  push:
+    branches: [main]
+  workflow_dispatch
+  
+ jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Node version
+        run: node --version
